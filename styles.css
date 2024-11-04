@@ -5,3 +5,8 @@
     height: 100vh; /* Ajuste conforme necessário */
     text-align: center;
 }
+
+#lapide img {
+    width: 30%; /* Ajuste para o tamanho desejado, como 50% da largura */
+    height: auto; /* Mantém a proporção */
+}
