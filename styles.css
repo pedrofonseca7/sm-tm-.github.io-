@@ -1,3 +1,8 @@
+body {
+    overflow: hidden;
+}
+
+
 #lapide {
     display: flex;
     align-items: center;
