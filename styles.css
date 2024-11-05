@@ -36,6 +36,12 @@ body {
     transform: translate(-50%, -50%); /* Centraliza tanto na horizontal quanto na vertical */
 }
 
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a cor do texto pai */
+    cursor: default; /* Muda o cursor para o padrão */
+}
+
 /* Media Query para telas pequenas (smartphones) */
 @media (max-width: 600px) {
     #lapide img {
