@@ -1,41 +1,62 @@
+/* Remover o scroll */
 body {
     overflow: hidden !important;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa da viewport para centralizar */
+    flex-direction: column;
+    margin: 0;
 }
 
-
+/* Estilização da Lápide */
 #lapide {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh; /* Ajuste conforme necessário */
+    margin: 0; /* Remove a margem para melhor centralização */
     text-align: center;
 }
 
+/* Ajuste da Imagem da Lápide */
 #lapide img {
-    width: 10%; /* Ajuste para o tamanho desejado, como 50% da largura */
-    height: 20%; /* Mantém a proporção */
+    width: 10%; /* Ajuste para o tamanho desejado */
+    height: auto; /* Mantém a proporção */
 }
 
+/* Estilização do Countdowns */
 #countdowns {
     font-size: 1em;
     color: #333;
+ 
+    top: 25%; /* Centraliza o countdown entre o topo e a lápide */
     text-align: center;
-    position: absolute;
-    top: 25vh; /* Ajusta a posição vertical para metade do caminho entre o topo e a lápide */
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* Ajuste fino para centralização */
 }
-
 #countdowns {
     font-size: 1em;
     color: #333;
+ 
+    top: 25%; /* Centraliza o countdown entre o topo e a lápide */
     text-align: center;
-    position: absolute;
-    top: 25vh; /* Ajusta a posição vertical para metade do caminho entre o topo e a lápide */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza tanto na horizontal quanto na vertical */
+    transform: translateY(-50%); /* Ajuste fino para centralização */
 }
 
+#A {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0; /* Remove a margem para melhor centralização */
+    text-align: center;
+}
+
+/* Ajuste da Imagem da Lápide */
+#A img {
+    width: 40%; /* Ajuste para o tamanho desejado */
+    height: auto; /* Mantém a proporção */
+}
+
+
+/* Estilização de Links */
 a {
     text-decoration: none; /* Remove o sublinhado */
     color: inherit; /* Usa a cor do texto pai */
@@ -51,7 +72,7 @@ a {
 
     #countdowns {
         font-size: 0.8em;  /* Reduz o tamanho da fonte */
-        top: 20vh; /* Ajusta a posição do countdown */
+        top: -30vh; /* Ajusta a posição do countdown */
     }
 }
 
@@ -64,7 +85,7 @@ a {
 
     #countdowns {
         font-size: 0.9em; /* Ajuste da fonte */
-        top: 22vh; /* Ajuste da posição vertical */
+        top: -28vh; /* Ajuste da posição vertical */
     }
 }
 
@@ -72,14 +93,11 @@ a {
 @media (min-width: 1200px) {
     #lapide img {
         width: 8%; /* Reduz um pouco o tamanho da imagem para telas grandes */
-        height: 16%; /* Ajuste proporcional da altura */
+        height: auto; /* Ajuste proporcional da altura */
     }
 
     #countdowns {
         font-size: 1.2em; /* Aumenta o tamanho da fonte para telas grandes */
-        top: 25vh; /* Mantém o topo inalterado */
+        top: -25vh; /* Mantém a posição entre o topo e a lápide */
     }
 }
-
-
-
